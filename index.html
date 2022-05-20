@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object.create() and constructor functions().</h1>
+    
+</body>
+</html>
+<script>
+
+    //object.creat()
+    var automobile={
+        engine:"doctype",
+        wheel:"4",
+        company:"TATA",
+        gear:"6",
+    }
+    let car1=Object.create(automobile)
+    car1.price="20Lac"
+    car1.color="blue"
+    car1.name="24c3"
+    console.log(car1)
+// Function constructor
+ function Automobile(p,c,n){
+     this.price=p;
+     this.color=c;
+     this.name=n;
+     this.wheel="4"
+     this.company="TATA"
+     this.gear="6"
+
+ }
+ let car2=new Automobile("40Lac","red","26c4")
+ car2.engine="doctype"
+console.log(car2)
+
+</script>
